@@ -1,0 +1,36 @@
+.functionTableHead{
+    background-color: #D9D9D966;
+    color: #606060;
+}
+.sortBy{
+    background: #E6E6E6;
+    padding: 8px 5px;
+}
+.functionTableBody td{
+    border-bottom: 0px !important;
+}
+.functionTableBody td select{
+    background: #F6F6F6;
+    width: 67px;
+    height: 29px;
+    border-radius: 12px;
+}
+.functionTableBody td input{
+    width: 195px;
+    height: 29px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+.btnFnctn{
+    background: #43425D;
+    color: #E6E6E6;
+}
+.btnFnctn-outline{
+    border: 1px solid #43425D;
+}
+.addManually{
+    height: 36px;
+    left: 595px;
+    background-color: #F1F1F1;
+    color: #606060;
+}

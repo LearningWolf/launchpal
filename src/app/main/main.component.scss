@@ -1,0 +1,22 @@
+*a{
+    text-decoration: none;
+    color: #43425D;
+}
+select{
+    border: none;
+}
+nav{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    height: 70px;
+}
+.main{
+    background: #F0F0F7;
+    height: 100vh;
+}
+p.title-head{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+span.bolder-title{
+    font-weight: 700;
+}

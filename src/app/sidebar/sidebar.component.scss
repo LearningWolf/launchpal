@@ -1,0 +1,34 @@
+
+ul{
+    list-style: none;
+}
+*a{
+    text-decoration: none;
+    color: #f4f5ff;
+}
+
+.headeSidebar{
+    padding-left: 2rem;
+}
+.sideNavli{
+    padding: 0.5rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+// .sidebarNavLink{
+//     padding: 1rem;
+// }
+.activeSideNav{
+    background-color: #39374d;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background-color: #3d85fd;
+        left: -20px;
+        // top: -6px;
+    }
+}

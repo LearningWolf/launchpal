@@ -1,0 +1,11 @@
+<h4 class="my-4">
+    <a href="#" class="headeSidebar">
+        Launchpal
+    </a>
+</h4>
+
+<ul class="sidebarNav ps-0" >
+    <li *ngFor="let navBar of sideNavBar" class="sideNavli" routerLinkActive="activeSideNav">
+        <a [routerLink]="[navBar.herfSideNav]"  class="sidebarNavLink"  rel="noopener noreferrer">{{navBar.sideNav}}</a>
+    </li>
+</ul>

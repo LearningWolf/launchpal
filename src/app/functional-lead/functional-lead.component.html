@@ -1,0 +1,168 @@
+<p class="title-head"><span class="bolder-title">Functional Lead</span> - Have you identified Key Stakeholders?</p>
+<form action="/" class="">
+    <div class="box-form w-100 bg-white p-3">
+        <div class="row mx-0 justify-content-between mb-3">
+            <div class="col-lg-3">
+                <h5><b>Data</b></h5>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-between">
+                <!-- <select name="sort" class="sortBy pe-2" aria-label="Default select example">
+                    <option value="sort" class="pe-1">Sort By</option>
+                </select> -->
+                <select class="form-select border-0 rounded-3 bg-gray" aria-label="Default select example">
+                    <option value="sort" class="pe-1" selected>Sort By</option>
+                    <option value="1">No</option>
+                </select>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Add New Role
+                </button>
+            </div>
+        </div>
+        <table class="table border-0">
+            <thead>
+                <tr class="functionTableHead">
+                    <th *ngFor="let thead of tblHead" class="border-0">{{thead}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="functionTableBody">
+                    <td>Program Lead</td>
+                    <td class="px-4">
+                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
+                            <option selected>Yes</option>
+                            <option value="1">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="ps-2" placeholder="Enter Name">
+                    </td>
+                    <td>
+                        <input type="date" class="px-2 dateShow rounded-pill border-0">
+                    </td>
+                    <td>
+                        ...
+                    </td>
+                </tr>
+                <tr class="functionTableBody">
+                    <td>Program Lead</td>
+                    <td class="px-4">
+                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
+                            <option selected>Yes</option>
+                            <option value="1">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="ps-2" placeholder="Enter Name">
+                    </td>
+                    <td>
+                        <input type="date" class="px-2 dateShow rounded-pill border-0">
+                    </td>
+                    <td>
+                        ...
+                    </td>
+                </tr>
+                <tr class="functionTableBody">
+                    <td>Program Lead</td>
+                    <td class="px-4">
+                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
+                            <option selected>Yes</option>
+                            <option value="1">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="ps-2" placeholder="Enter Name">
+                    </td>
+                    <td>
+                        <input type="date" class="px-2 dateShow rounded-pill border-0">
+                    </td>
+                    <td>
+                        ...
+                    </td>
+                </tr>
+                <tr class="functionTableBody">
+                    <td>Program Lead</td>
+                    <td class="px-4">
+                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
+                            <option selected>Yes</option>
+                            <option value="1">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="ps-2" placeholder="Enter Name">
+                    </td>
+                    <td>
+                        <input type="date" class="px-2 dateShow rounded-pill border-0">
+                    </td>
+                    <td>
+                        ...
+                    </td>
+                </tr>
+                <tr class="functionTableBody">
+                    <td>Program Lead</td>
+                    <td class="px-4">
+                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
+                            <option selected>Yes</option>
+                            <option value="1">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="ps-2" placeholder="Enter Name">
+                    </td>
+                    <td>
+                        <input type="date" class="px-2 dateShow rounded-pill border-0">
+                    </td>
+                    <td>
+                        ...
+                    </td>
+                </tr>
+                <tr class="functionTableBody">
+                    <td>Program Lead</td>
+                    <td class="px-4">
+                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
+                            <option selected>Yes</option>
+                            <option value="1">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="ps-2" placeholder="Enter Name">
+                    </td>
+                    <td>
+                        <input type="date" class="px-2 dateShow rounded-pill border-0">
+                    </td>
+                    <td>
+                        ...
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex mx-0 justify-content-end mt-3">
+        <button class="btn">Back</button>
+        <button class="btn btnFnctn-outline mx-2">Save</button>
+        <button class="btn btnFnctn">Commercial & MSL</button>
+    </div>
+</form>
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add New Role</h5>
+        </div>
+        <div class="modal-body">
+          <button class="btn text-center w-100 addManually">
+            + Add Manually
+          </button>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
