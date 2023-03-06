@@ -11,7 +11,8 @@ import { SalesComponent } from './sales/sales.component';
 
 
 const routes: Routes = [
-  {path : '', component: QuestionaireComponent},
+  // {path : '', component: QuestionaireComponent},
+  {path : '', redirectTo: '/Questionaire', pathMatch: 'full'},
   {path : 'Questionaire', component: QuestionaireComponent},
   {path : 'FunctionalLead', component: FunctionalLeadComponent},
   {path : 'Commercial', component: CommercialComponent},
