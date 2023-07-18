@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SalesComponent implements OnInit {
 
+
+  pipesName = "Keshav kumar";
+  person = {
+    'firsname': 'Keshav',
+  }
   constructor() { }
 
   ngOnInit(): void {

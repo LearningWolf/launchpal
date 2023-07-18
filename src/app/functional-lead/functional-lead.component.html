@@ -25,100 +25,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="functionTableBody">
-                    <td>Program Lead</td>
+                <tr class="functionTableBody" *ngFor="let fntctnl of fnctnlTable">
+                    <td>{{fntctnl}}</td>
                     <td class="px-4">
-                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
-                            <option selected>Yes</option>
-                            <option value="1">No</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="text" class="ps-2" placeholder="Enter Name">
-                    </td>
-                    <td>
-                        <input type="date" class="px-2 dateShow rounded-pill border-0">
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr class="functionTableBody">
-                    <td>Program Lead</td>
-                    <td class="px-4">
-                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
-                            <option selected>Yes</option>
-                            <option value="1">No</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="text" class="ps-2" placeholder="Enter Name">
-                    </td>
-                    <td>
-                        <input type="date" class="px-2 dateShow rounded-pill border-0">
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr class="functionTableBody">
-                    <td>Program Lead</td>
-                    <td class="px-4">
-                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
-                            <option selected>Yes</option>
-                            <option value="1">No</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="text" class="ps-2" placeholder="Enter Name">
-                    </td>
-                    <td>
-                        <input type="date" class="px-2 dateShow rounded-pill border-0">
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr class="functionTableBody">
-                    <td>Program Lead</td>
-                    <td class="px-4">
-                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
-                            <option selected>Yes</option>
-                            <option value="1">No</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="text" class="ps-2" placeholder="Enter Name">
-                    </td>
-                    <td>
-                        <input type="date" class="px-2 dateShow rounded-pill border-0">
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr class="functionTableBody">
-                    <td>Program Lead</td>
-                    <td class="px-4">
-                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
-                            <option selected>Yes</option>
-                            <option value="1">No</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="text" class="ps-2" placeholder="Enter Name">
-                    </td>
-                    <td>
-                        <input type="date" class="px-2 dateShow rounded-pill border-0">
-                    </td>
-                    <td>
-                        ...
-                    </td>
-                </tr>
-                <tr class="functionTableBody">
-                    <td>Program Lead</td>
-                    <td class="px-4">
-                        <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
+                        <select class="px-2 border-0 rounded-pill bg-gray" aria-label="Default select example">
                             <option selected>Yes</option>
                             <option value="1">No</option>
                         </select>
@@ -154,14 +64,30 @@
           <h5 class="modal-title" id="exampleModalLabel">Add New Role</h5>
         </div>
         <div class="modal-body">
-          <button class="btn text-center w-100 addManually">
-            + Add Manually
-          </button>
+            <h6>Add New Role</h6>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" *ngFor="let tableHead of modalTablHead">
+                        {{tableHead}}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let modalBobyTable of modalTable">
+                    <td>{{modalBobyTable.role}}</td>
+                    <td>{{modalBobyTable.description}}</td>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-outline-secondary w-100">+ Add Manually</button>
         </div>
         <div class="modal-footer">
-          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
           <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btnFnctn">Save</button>
         </div>
       </div>
     </div>

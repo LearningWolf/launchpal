@@ -32,3 +32,10 @@ ul{
         // top: -6px;
     }
 }
+.navAccord.accordion-button::after{
+    background-image: url('../../assets/downArrow.png') !important;
+    width: 0.7rem !important;
+    height: 0.4rem !important;
+    margin-left: 10px !important;
+    background-size: auto !important;
+}

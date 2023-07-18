@@ -5,7 +5,28 @@
 </h4>
 
 <ul class="sidebarNav ps-0" >
-    <li *ngFor="let navBar of sideNavBar" class="sideNavli" routerLinkActive="activeSideNav">
-        <a [routerLink]="[navBar.herfSideNav]"  class="sidebarNavLink"  rel="noopener noreferrer">{{navBar.sideNav}}</a>
+    <li *ngFor="let navBar01 of sideNavBar01" class="sideNavli" routerLinkActive="activeSideNav">
+        <a [routerLink]="[navBar01.herfSideNav]"  class="sidebarNavLink"  rel="noopener noreferrer">{{navBar01.sideNav}}</a>
+    </li>
+    <li class="sideNavli accordion p-0"  id="accordionPanelsStayOpenExample">
+        <div class="accordion-item border-0 bg-transparent text-white ps-2 ms-1">
+            <h6 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="navAccord shadow-none accordion-button collapsed border-0 bg-transparent text-white py-2 btn-outline-transparent" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Activities Mapping
+              </button>
+            </h6>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse border-0" aria-labelledby="panelsStayOpen-headingThree">
+              <ul class="accordion-body border-0 pb-0 pt-2">
+                <li class="mb-2 ps-2" *ngFor="let acord of sidebarAcord">
+                   <a href="">
+                    {{acord}}
+                   </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </li>
+    <li *ngFor="let navBar02 of sideNavBar02" class="sideNavli" routerLinkActive="activeSideNav">
+        <a [routerLink]="[navBar02.herfSideNav]"  class="sidebarNavLink"  rel="noopener noreferrer">{{navBar02.sideNav}}</a>
     </li>
 </ul>
