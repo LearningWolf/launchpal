@@ -12,6 +12,14 @@ import { SystemComponent } from './system/system.component';
 import { DataComponent } from './data/data.component';
 import { ReportComponent } from './report/report.component';
 import { SalesComponent } from './sales/sales.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {FormsModule} from '@angular/forms';
+
+// material imports
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +37,12 @@ import { SalesComponent } from './sales/sales.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

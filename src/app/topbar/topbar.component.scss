@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+}
+.topNav{
+    vertical-align: middle;
+    margin-top: 1rem;
+}
+.notBtn,.crclImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.mat-form-field{
+    color: #fff;
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline{
+    background-color: white !important;
+}
+.mat-form-field-appearance-legacy .mat-form-field-wrapper{
+    padding-bottom: 0em !important;
+}
