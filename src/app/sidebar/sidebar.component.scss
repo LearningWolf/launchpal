@@ -4,7 +4,7 @@ ul{
 }
 *a{
     text-decoration: none;
-    color: #f4f5ff;
+    // color: #f4f5ff;
 }
 
 .headeSidebar{
@@ -20,7 +20,7 @@ ul{
 //     padding: 1rem;
 // }
 .activeSideNav{
-    background-color: #000000;
+    background-color: #90c3ff;
     position: relative;
     &::before{
         content: "";
