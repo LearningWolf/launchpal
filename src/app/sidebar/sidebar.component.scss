@@ -12,25 +12,20 @@ ul{
 }
 .sideNavli{
     padding: 0.5rem;
-    padding-left: 2rem;
-    font-size: 1rem;
+    padding-left: 1rem;
+    font-size: 1.1rem;
     line-height: 1.2;
+    width: 100%;
 }
-// .sidebarNavLink{
-//     padding: 1rem;
-// }
-.activeSideNav{
-    background-color: #000000;
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        width: 5px;
-        height: 100%;
-        background-color: #3d85fd;
-        left: -20px;
-        // top: -6px;
-    }
+.sideNavli a{
+    padding: 0.4rem 1rem;
+}
+.activeSideNav a{
+    background-color: #555459;
+    // background-color: #e94363;
+    display: block;
+    width: 90% !important;
+    border-radius: 4px;
 }
 .navAccord.accordion-button::after{
     background-image: url('../../assets/downArrow.png') !important;
