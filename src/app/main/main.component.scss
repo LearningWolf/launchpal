@@ -6,12 +6,15 @@ select{
     border: none;
 }
 nav{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     height: 70px;
+    border-radius: 8px;
+    background-color: #555459;
 }
 .main{
     // background: #F0F0F7;
-    height: 100vh;
+    height: 75vh;
+    border-radius: 8px;
+    overflow-y: auto;
 }
 p.title-head{
     font-size: 1.5rem;
@@ -19,4 +22,7 @@ p.title-head{
 }
 span.bolder-title{
     font-weight: 700;
+}
+.form-check .form-check-label {
+    color: #E48976;
 }
