@@ -12,4 +12,10 @@ export class CommercialComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  tblHead = ['Role','Identified/Hired','Name','Onboarding ETA','Action'];
+
+  
+  
+  fnctnlTable = ['Program Lead','Sales Lead','Marketing Lead','Market Access Lead','Medical Lead','Medical Affairs Lead','PMO','IT Lead']
+
 }

@@ -12,7 +12,7 @@
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
-                <button type="button" class="btn btn-outline-secondary modal-Btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Secondary</button>
+                <button type="button" class="btn btn-outline-secondary modal-Btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add New Role</button>
             </div>
         </div>
 
@@ -24,21 +24,21 @@
             </thead>
             <tbody>
               <tr *ngFor="let ttl of fnctnlTable">
-                <th >{{ttl}}</th>
+                <th><h3 class="mt-3">{{ttl}}</h3></th>
                 <td>
-                    <select>
+                    <select class="form-select">
                         <option>yes</option>
                         <option>No</option>
                     </select>
                 </td>
                 <td>
-                    <input type="text" name="" id="" placeholder="Enter Value">
+                    <input class="form-control mt-2" type="text" name="" id="" placeholder="Enter Value">
                 </td>
                 <td>
-                    <input type="date" name="" id="" placeholder="Enter Value">
+                    <input class="form-control mt-2" type="date" name="" id="" placeholder="Enter Value">
                 </td>
                 <td>
-                    <button type="button">Edit</button>
+                    <button type="button" class="btn btn-danger mt-2">Edit</button>
                 </td>
               </tr>
             </tbody>
