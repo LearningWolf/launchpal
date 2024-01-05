@@ -21,6 +21,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
+import { ModalComponent } from './modal/modal.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import {MatNativeDateModule} from '@angular/material/core';
     SystemComponent,
     DataComponent,
     ReportComponent,
-    SalesComponent
+    SalesComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

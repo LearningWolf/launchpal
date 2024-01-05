@@ -1,109 +1,48 @@
-<p class="title-head "><span class="bolder-title">Questionnaire</span> - Answer a few questions to help us understand your project!</p>
+<p class="title-head "><span class="bolder-title">Functional Lead</span> - Have you identified Key Stakeholders?</p>
 <form action="/" class="">
     <div class="box-form w-100  px-4 pb-4">
         <div class="row justify-content-between">
             <div class="col-6 my-2 py-1">
-                <h5 class="pt-1">When is the expected Product Launch?</h5>
-                <input type="date" class="dateShow" class="px-2 dateShow rounded-pill border-0" name="" id="">
+                <h1>Data</h1>
             </div>
-            <div class="col-6 my-2 py-1">
-                <h5 class="pt-1">When is the PDUFA?</h5>
-                <input type="date" class="dateShow" class="px-2 dateShow rounded-pill border-0" name="" id="">
-            </div>
-        </div>
-        <div class="row justify-content-between">
-            <div class="col-6 my-2 py-1">
-                <h5 class="pt-1">Who would be the main consumers?</h5>
-                <div class="d-flex">
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Children
-                        </label>
-                    </div>
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Male
-                        </label>
-                    </div>
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Female
-                        </label>
-                    </div>
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Senior Citizen
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 my-2 py-1">
-                <h5 class="pt-1">Who would be the main Targets?</h5>
-                <div class="d-flex">
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            HCPs
-                        </label>
-                    </div>
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            HCOs
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-between">
-            <div class="col-6 my-2 py-1">
-                <h5 class="pt-1">Where will be the launch?</h5>
-                <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
-                    <option selected>United States of America</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-            </div>
-            <div class="col-6 my-2 py-1">
-                <h5 class="pt-1">What is the Therapy Area?</h5>
-                <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
-                    <option selected>Cardiology</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-            </div>
-        </div>
-        <div class="row justify-content-between">
-            <div class="col-6 my-2 py-1">
-                <h5 class="pt-1">What would be the business model?</h5>
-                <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
-                    <option selected>Soeciality Pharmacy</option>
+            <div class="col-6 my-2 py-1 d-flex justify-content-end">
+                <select class="form-select w-25 me-3" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
-            </div>
-            <div class="col-6 my-2 py-1">
-                <h5 class="pt-1">What would be the target specialty?</h5>
-                <div class="d-flex">
-                    <select class="form-select border-0 rounded-pill bg-gray" aria-label="Default select example">
-                        <option selected>Allergy & Immunology</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                </div>
+                <button type="button" class="btn btn-outline-secondary modal-Btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Secondary</button>
             </div>
         </div>
-    </div>
-    <div class="d-flex mx-0 mt-3">
-        <button class="btn btnFnctn-outline mx-2 ">Save</button>
-        <button class="btn btnFnctn">Functional Lead</button>
+
+        <table class="table">
+            <thead class="bg-secondary text-white">
+              <tr>
+                <th scope="col" *ngFor="let tblttl of tblHead">{{tblttl}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let ttl of fnctnlTable">
+                <th >{{ttl}}</th>
+                <td>
+                    <select>
+                        <option>yes</option>
+                        <option>No</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name="" id="" placeholder="Enter Value">
+                </td>
+                <td>
+                    <input type="date" name="" id="" placeholder="Enter Value">
+                </td>
+                <td>
+                    <button type="button">Edit</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
     </div>
 </form>
+<app-modal></app-modal>

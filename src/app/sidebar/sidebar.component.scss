@@ -13,7 +13,7 @@ ul{
 .sideNavli{
     padding: 0.5rem;
     padding-left: 1rem;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     line-height: 1.2;
     width: 100%;
 }
@@ -27,10 +27,18 @@ ul{
     width: 90% !important;
     border-radius: 4px;
 }
+.navAccord.accordion-button{
+    font-size: 0.8rem !important;
+}
 .navAccord.accordion-button::after{
     background-image: url('../../assets/downArrow.png') !important;
     width: 0.7rem !important;
     height: 0.4rem !important;
     margin-left: 10px !important;
+    margin-top: 4px;
     background-size: auto !important;
+    font-size: 0.8rem !important;
+}
+.accord-body-cnt{
+    padding: 0.4rem !important;
 }

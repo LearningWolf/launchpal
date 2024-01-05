@@ -1,8 +1,8 @@
-<h3 class="my-4">
+<h2 class="my-4">
     <a href="#" class="headeSidebar">
         Launchpal
     </a>
-</h3>
+</h2>
 
 <ul class="sidebarNav ps-0 sticky-top">
     <li *ngFor="let navBar01 of sideNavBar01" class="sideNavli" routerLinkActive="activeSideNav">
@@ -10,15 +10,15 @@
     </li>
     <li class="sideNavli accordion p-0"  id="accordionPanelsStayOpenExample">
         <div class="accordion-item border-0 bg-transparent text-white ps-2 ms-1">
-            <h6 class="accordion-header mb-0" id="panelsStayOpen-headingThree">
+            <div class="accordion-header mb-0" id="panelsStayOpen-headingThree">
               <button class="navAccord shadow-none accordion-button collapsed border-0 bg-transparent text-white py-2 btn-outline-transparent" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                   Activities Mapping
               </button>
-            </h6>
+            </div>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse border-0" aria-labelledby="panelsStayOpen-headingThree">
               <ul class="accordion-body border-0 pb-0 pt-2">
-                <li class="mb-2 ps-2" *ngFor="let acord of sidebarAcord">
-                   <a href="">
+                <li class="mb-2" *ngFor="let acord of sidebarAcord">
+                   <a href="" class="accord-body-cnt">
                     {{acord}}
                    </a>
                 </li>
