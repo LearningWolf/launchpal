@@ -1,0 +1,12 @@
+{
+    "fnctnlTable" : [
+        {"role": "Program Lead","Name" : "Xyz" , "Identified/Hired" : "yes", "Onboarding ETA": "May, 2022"},
+        {"role": "Marketing Lead","Name" : "Xyz" , "Identified/Hired" : "yes", "Onboarding ETA": "May, 2022"},
+        {"role": "Market Access Lead","Name" : "Xyz" , "Identified/Hired" : "yes", "Onboarding ETA": "May, 2022"},
+        {"role": "Medical Lead","Name" : "Xyz" , "Identified/Hired" : "yes", "Onboarding ETA": "May, 2022"},
+        {"role": "Medical Affairs Lead","Name" : "Xyz" , "Identified/Hired" : "yes", "Onboarding ETA": "May, 2022"},
+        {"role": "PMO","Name" : "Xyz" , "Identified/Hired" : "yes", "Onboarding ETA": "May, 2022"},
+        {"role": "IT Lead","Name" : "Xyz" , "Identified/Hired" : "yes", "Onboarding ETA": "May, 2022"}
+    ]
+}
+  
